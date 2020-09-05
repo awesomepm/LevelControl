@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303f9f"
+    tools:context="com.example.inspiron.levelcontrol.ManualActivity">
+
+    <SeekBar
+        android:id="@+id/sbKp"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvKp"
+        android:layout_alignStart="@+id/sbKi" />
+
+    <SeekBar
+        android:id="@+id/sbKd"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvKd"
+        android:layout_alignStart="@+id/send" />
+
+    <SeekBar
+        android:id="@+id/sbKi"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvKi"
+        android:layout_alignStart="@+id/send" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="Set values for Kp, Ki, and Kd"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvKp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:text="Kp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvKp"
+        android:layout_alignStart="@+id/tvKp"
+        android:layout_below="@+id/tvKp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:text="Ki"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvKd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvKi"
+        android:layout_below="@+id/tvKi"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:text="Kd"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/editKp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tvKp"
+        android:layout_marginEnd="17dp"
+        android:background="#ffffff"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/editKd"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+
+        android:layout_alignStart="@+id/editKi"
+        android:layout_alignTop="@+id/tvKd"
+        android:background="#ffffff"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/editKi"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/editKp"
+        android:layout_alignTop="@+id/tvKi"
+        android:background="#ffffff"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbKd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:background="@drawable/rounded_btn"
+        android:text="SEND DATA"
+        android:textColor="@android:color/background_light" />
+</RelativeLayout>

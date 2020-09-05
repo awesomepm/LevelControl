@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303f9f"
+    tools:context="com.example.inspiron.levelcontrol.AutoActivity">
+
+    <Button
+        android:id="@+id/getData"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/rounded_btn"
+        android:text="FETCH DATA"
+        android:textColor="@android:color/background_light" />
+
+    <TableLayout
+        android:id="@+id/tab"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="72dp">
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Method:\nValues"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/method1"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Ziegler Nichols"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/method2"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Cohen Coon"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/method3"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Internal Model Control"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/method4"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Haalman"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvmo"
+                android:layout_width="68dp"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Maximum Overshoot"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvznmo"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvccmo"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvimcmo"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvhmmo"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvst"
+                android:layout_width="68dp"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Settling Time"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvznst"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvccst"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvimcst"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvhmst"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvrt"
+                android:layout_width="68dp"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Rise Time"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvznrt"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvccrt"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvimcrt"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvhmrt"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvei"
+                android:layout_width="68dp"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Peak Time"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvznei"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvccei"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvimcei"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvhmei"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvKp"
+                android:layout_width="68dp"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Kp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvznKp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvccKp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvimcKp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvhmKp"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvKi"
+                android:layout_width="68dp"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Ki"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvznKi"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvccKi"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvimcKi"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvhmKi"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvKd"
+                android:layout_width="68dp"
+                android:layout_height="41dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="Kd"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvznKd"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvccKd"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvimcKd"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/tvhmKd"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
